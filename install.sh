@@ -25,6 +25,6 @@ else
   echo '镜像文件clarkchan/rpi-openface已经存在,可以直接运行.'
 fi
 echo '运行:'
-echo '    bash train.sh [需要训练的图像数据路径] [校准后的输出路径] [特征文件路径]'
-echo '    bash detect.sh [特征文件路径] [需要识别的文件]'
+echo '    bash train.sh [需要训练的图像数据路径]'
+echo '    bash detect.sh [需要训练的图像数据路径] [需要识别的文件]'
 echo '试试看吧.'
