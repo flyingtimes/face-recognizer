@@ -24,6 +24,8 @@ if [[ "$(docker images -q clarkchan/rpi-openface 2> /dev/null)" == "" ]]; then
 else
   echo '镜像文件clarkchan/rpi-openface已经存在,可以直接运行.'
 fi
+curl -s https://raw.githubusercontent.com/flyingtimes/face-recognizer/master/run_train.sh
+curl -s https://raw.githubusercontent.com/flyingtimes/face-recognizer/master/run_detect.sh
 echo '运行:'
 echo '    bash run_train.sh [需要训练的图像数据路径]'
 echo '    例如:bash run_train.sh $PWD #代表将本路径作为图像数据路径，程序会自动访问下面的input,align,feature 路径 '
