@@ -30,5 +30,5 @@ echo '运行:'
 echo '    bash run_train.sh [需要训练的图像数据路径]'
 echo '    例如:bash run_train.sh $PWD #代表将本路径作为图像数据路径，程序会自动访问下面的input,align,feature 路径 '
 echo '    bash run_detect.sh [需要训练的图像数据路径] [需要识别的文件]'
-echo '    例如:bash run_detect.sh $PWD wbq01.jpg
+echo '    例如:bash run_detect.sh $PWD wbq01.jpg'
 echo '试试看吧.'
