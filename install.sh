@@ -7,7 +7,7 @@ fi
 # 安装docker
 if ! hash docker 2>/dev/null;then
   echo '没有检测到docker，需要安装docker,请等待......'
-  curl -sSL https://get.docker.com | sh
+  sudo apt-get install docker-ce -y
   if hash docker 2>/dev/null;then
     echo 'docker 安装完毕.' 
   else
@@ -19,7 +19,7 @@ fi
 # 安装镜像文件
 if [[ "$(docker images -q clarkchan/rpi-openface 2> /dev/null)" == "" ]]; then
   echo '正在下载安装镜像文件(大小约2GB),请等待......'
-  docker pull clarkchan/rpi-openface
+  sudo docker pull clarkchan/rpi-openface
   echo '镜像文件安装完毕.'
 else
   echo '镜像文件clarkchan/rpi-openface已经存在,可以直接运行.'
